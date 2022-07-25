@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemphoto"
+        android:title="Выбрать фотографию"
+        android:icon="@drawable/ic_outline_cloud_done_24"
+        ></item>
+
+    <item
+        android:id="@+id/itemdelete"
+        android:title="Удалить"
+        android:icon="@drawable/ic_outline_delete_24"
+        ></item>
+
+</menu>

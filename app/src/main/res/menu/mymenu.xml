@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/item1"
+        android:title="Создать группу"
+        android:icon="@drawable/ic_outline_people_alt_24"
+        ></item>
+
+    <item android:id="@+id/item2"
+        android:title="Контакт"
+        android:icon="@drawable/ic_outline_person_outline_24"
+        ></item>
+
+    <item android:id="@+id/item3"
+        android:title="Звонки"
+        android:icon="@drawable/ic_outline_call_24"
+        ></item>
+
+    <item android:id="@+id/item4"
+        android:title="Люди рядом"
+        android:icon="@drawable/ic_baseline_groups_24"
+        ></item>
+
+    <item android:id="@+id/item5"
+        android:title="Избранное"
+        android:icon="@drawable/ic_outline_bookmark_border_24"
+        ></item>
+
+    <item android:id="@+id/item6"
+        android:title="Настройки"
+        android:icon="@drawable/ic_outline_settings_24"
+        ></item>
+
+    <item android:id="@+id/item7"
+        android:title="Пригдасить друзей"
+        android:icon="@drawable/ic_outline_person_add_24"
+        ></item>
+
+    <item android:id="@+id/item8"
+        android:title="Возможности Telegram Ultra Lite"
+        android:icon="@drawable/ic_baseline_help_outline_24"
+        ></item>
+
+</menu>

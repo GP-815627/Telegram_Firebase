@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center"
+    tools:context=".MainActivityLogin">
+
+    <EditText
+        android:padding="10dp"
+        android:background="@drawable/edittext"
+        android:id="@+id/edittextgmail"
+        android:hint="адрес эл.почты"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@drawable/edittext"
+        android:id="@+id/edittextpassword"
+        android:hint="пароль"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_margin="10dp"
+        android:background="@drawable/buttonlogin"
+        android:textAllCaps="false"
+        android:layout_weight="1"
+        android:id="@+id/buttonlogin"
+        android:text="Войти"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_margin="10dp"
+            android:background="@drawable/buttonregister"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:id="@+id/buttonregister"
+            android:text="Регистрация"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:visibility="invisible"
+        android:id="@+id/progressbarlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ProgressBar>
+
+</LinearLayout>

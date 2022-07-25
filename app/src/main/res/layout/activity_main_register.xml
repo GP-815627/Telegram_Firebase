@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivityRegister">
+
+
+
+    <EditText
+        android:padding="10dp"
+        android:background="@drawable/edittext"
+        android:id="@+id/edittextname"
+        android:hint="Имя"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@drawable/edittext"
+        android:id="@+id/edittextsurname"
+        android:hint="Фамилия"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@drawable/edittext"
+        android:id="@+id/edittextgmail"
+        android:hint="Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@drawable/edittext"
+        android:id="@+id/edittextpassword"
+        android:hint="Пароль"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_margin="10dp"
+        android:background="@drawable/buttonregister"
+        android:textAllCaps="false"
+        android:id="@+id/buttonregister2"
+        android:text="Регистрация"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.appcompat.widget.AppCompatButton>
+
+    <ProgressBar
+        android:visibility="invisible"
+        android:id="@+id/progresbarregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ProgressBar>
+
+</LinearLayout>

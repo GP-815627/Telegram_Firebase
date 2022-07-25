@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+
+    tools:context=".MainActivityAddEmail">
+
+    <ImageView
+       android:id="@+id/imageback2"
+        android:src="@drawable/ic_baseline_arrow_back_25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ImageView>
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            app:lottie_loop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/te"
+            app:lottie_rawRes="@raw/cat"
+            android:id="@+id/lottieanimationviewaddgmail"
+            android:layout_width="150dp"
+            android:layout_height="150dp"></com.airbnb.lottie.LottieAnimationView>
+
+    <TextView
+        android:id="@+id/te"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:text="Сменить Аккаунт"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/te"
+        android:text="           Здесь Вы можете сменить\n Аккаунт Telegram. Ваши все данные \n(сообщения, медия, аккаунты и т.д.)\nбудут перенесены на новый Аккаунт"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/buttonadd"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:text="Сменить Аккаунт"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.appcompat.widget.AppCompatButton>
+
+</RelativeLayout>

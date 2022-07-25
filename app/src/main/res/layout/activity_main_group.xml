@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivityGroup">
+
+    <Toolbar
+        android:background="#2196F3"
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/im"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></ImageView>
+
+            <LinearLayout
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@id/im"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="Создать группу"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+
+                <TextView
+                    android:textColor="#D7E9ED"
+                    android:text="до 200000 участников"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Кого бы Вы хотели пригласить"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reccyclerviewgroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

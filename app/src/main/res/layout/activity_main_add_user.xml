@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivityAddUser">
+
+    <Toolbar
+        android:background="#2196F3"
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageback3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:src="@drawable/ic_baseline_arrow_back_24"></ImageView>
+
+                <TextView
+                    android:layout_marginLeft="25dp"
+android:layout_toRightOf="@id/imageback3"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="Имя пользователя"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+
+            <ImageView
+                android:layout_marginRight="20dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_baseline_done_25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></ImageView>
+
+        </RelativeLayout>
+
+    </Toolbar>
+
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:padding="10dp"
+            android:background="@drawable/edittext"
+            android:hint="Ваше имя пользователя"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></EditText>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="Вы можете выбрать публичное имя\nпользователя в Telegram. В этом случае\nдругие люди смогут найти Вас по такому\nимени и связаться, не зная Вашего\nтелефона."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:text="Вы можете использовать символы a-z, 0-9\nи подчеркивария. Минимальная длина длина -5\nсимволов."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

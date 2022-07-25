@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivityProfile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp">
+
+                <ImageView
+
+                    android:id="@+id/imageviewadd"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cat6"></ImageView>
+
+                <ImageView
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:id="@+id/imageoptions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/ic_baseline_more_vert_24"></ImageView>
+
+                <ImageView
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:id="@+id/imageback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/ic_baseline_arrow_back_24"></ImageView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textviewprofilename2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Санжар Саттаров"
+                        android:textColor="@color/white"
+                        android:textSize="32dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="В сети"
+                        android:textColor="#ECEEEF"></TextView>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="Аккаунт"
+                        android:textColor="#2196F3"
+                        android:textStyle="bold"></TextView>
+
+                    <LinearLayout
+                        android:id="@+id/linearlayemail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textviewemail2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="sancho@gmail.com"
+                            android:textColor="@color/black"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Нажмите, чтобы изменить Аккаунт"
+                            android:textSize="12dp"></TextView>
+
+                        <com.google.android.material.divider.MaterialDivider
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"></com.google.android.material.divider.MaterialDivider>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearlayusername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textviewusername2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Имя пользователя"
+                            android:textSize="12dp"></TextView>
+
+                        <com.google.android.material.divider.MaterialDivider
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"></com.google.android.material.divider.MaterialDivider>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearlayосебе"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textviewbiografiya"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="."
+                            android:textColor="@color/black"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="О себе"
+                            android:textSize="12dp"></TextView>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="#EDEBEB"></View>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="Настройки"
+                        android:textColor="#2196F3"
+                        android:textStyle="bold"></TextView>
+
+                    <LinearLayout
+                        android:id="@+id/linearlayуведомления"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="8dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_outline_notifications_24"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="20dp"
+                                android:text="Уведомления и звуки"
+                                android:textColor="@color/black"></TextView>
+
+                        </LinearLayout>
+
+                        <com.google.android.material.divider.MaterialDivider
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="55dp"
+                            android:layout_marginTop="5dp"></com.google.android.material.divider.MaterialDivider>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearlayконфиденциальность"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="8dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_outline_no_encryption_gmailerrorred_24"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="20dp"
+                                android:text="Конфиденциальность"
+                                android:textColor="@color/black"></TextView>
+
+                        </LinearLayout>
+
+                        <com.google.android.material.divider.MaterialDivider
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="55dp"
+                            android:layout_marginTop="5dp"></com.google.android.material.divider.MaterialDivider>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearlayпамять"
+                        android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="8dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_baseline_data_saver_off_24"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="20dp"
+                                android:text="Данные и память"
+                                android:textColor="@color/black"></TextView>
+
+                        </LinearLayout>
+
+                        <com.google.android.material.divider.MaterialDivider
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="55dp"
+                            android:layout_marginTop="5dp"></com.google.android.material.divider.MaterialDivider>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearlayнастройкичатов"
+                        android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="8dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_outline_chat_bubble_outline_24"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="20dp"
+                                android:text="Настройки чатов"
+                                android:textColor="@color/black"></TextView>
+
+                        </LinearLayout>
+
+                        <com.google.android.material.divider.MaterialDivider
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="55dp"
+                            android:layout_marginTop="5dp"></com.google.android.material.divider.MaterialDivider>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearlayстикеры"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="8dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_outline_emoji_emotions_24"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="20dp"
+                                android:text="Стикеры и эмодзи"
+                                android:textColor="@color/black"></TextView>
+
+                        </LinearLayout>
+
+                        <com.google.android.material.divider.MaterialDivider
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="55dp"
+                            android:layout_marginTop="5dp"></com.google.android.material.divider.MaterialDivider>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearlayпапки"
+                        android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="8dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_outline_folder_24"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="20dp"
+                                android:text="Папки"
+                                android:textColor="@color/black"></TextView>
+
+                        </LinearLayout>
+
+                        <com.google.android.material.divider.MaterialDivider
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="55dp"
+                            android:layout_marginTop="5dp"></com.google.android.material.divider.MaterialDivider>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearlayустройства"
+                        android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="8dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_round_devices_24"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="20dp"
+                                android:text="Устройства"
+                                android:textColor="@color/black"></TextView>
+
+                        </LinearLayout>
+
+                        <com.google.android.material.divider.MaterialDivider
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="55dp"
+                            android:layout_marginTop="5dp"></com.google.android.material.divider.MaterialDivider>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearlayязык"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_round_language_24"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="20dp"
+                                android:text="Язык"
+                                android:textColor="@color/black"></TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="#EDEBEB"></View>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="Помощь"
+                        android:textColor="#2196F3"
+                        android:textStyle="bold"></TextView>
+
+                    <LinearLayout
+                        android:layout_marginBottom="8dp"
+                        android:id="@+id/linearlayвопрос"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_outline_more_24"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:text="Задать вопрос"
+                            android:textColor="@color/black"></TextView>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="64dp"
+                        android:layout_marginTop="5dp"></com.google.android.material.divider.MaterialDivider>
+
+                    <LinearLayout
+                        android:layout_marginBottom="8dp"
+                        android:id="@+id/linearlayотелеграм"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_help_outline_24"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:text="Вопросы о Telegram Ultra Lite"
+                            android:textColor="@color/black"></TextView>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="64dp"
+                        android:layout_marginTop="5dp"></com.google.android.material.divider.MaterialDivider>
+
+                    <LinearLayout
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/linearlayполитика"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_outline_cloud_done_24"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:text="Политика конфедиальности"
+                            android:textColor="@color/black"></TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#EDEBEB"></View>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingactionbuttonadd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="end"
+                android:layout_marginTop="-910dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_outline_add_a_photo_24"
+                app:tint="#67696A"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
